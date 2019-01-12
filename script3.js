@@ -98,7 +98,7 @@
 	})( jQuery );
 	
 	var user_ip = ["254.41.197.192","181.15.126.200","209.106.24.170","34.143.58.72","29.201.175.99","100.186.42.9","57.98.121.206","35.57.185.160","22.176.152.72","50.99.2.200","133.9.137.215","178.81.40.52","22.120.137.255","94.237.105.49","63.62.177.120","128.213.22.206","222.206.180.186","88.68.57.209","129.220.179.75","156.40.138.82"];
-	var country_flag = ['img/cf/UK.png', 'img/cf/US.png', 'img/cf/Germany.png', 'img/cf/Netherlands.png', 'img/cf/Sweden.png', 'img/cf/Australia.png', 'img/cf/France.png', 'img/cf/Switzerland.png', 'img/cf/Belgium.png', 'img/cf/Canada.png', 'img/cf/Denmark.png', 'img/cf/Italy.png', 'img/cf/Singapore.png'];	
+	var country_flag = ['http://5kfollowersboost.com/3/img/cf/UK.png', 'http://5kfollowersboost.com/3/img/cf/US.png', 'http://5kfollowersboost.com/3/img/cf/Germany.png', 'http://5kfollowersboost.com/3/img/cf/Netherlands.png', 'http://5kfollowersboost.com/3/img/cf/Sweden.png', 'http://5kfollowersboost.com/3/img/cf/Australia.png', 'http://5kfollowersboost.com/3/img/cf/France.png', 'http://5kfollowersboost.com/3/img/cf/Switzerland.png', 'http://5kfollowersboost.com/3/img/cf/Belgium.png', 'http://5kfollowersboost.com/3/img/cf/Canada.png', 'http://5kfollowersboost.com/3/img/cf/Denmark.png', 'http://5kfollowersboost.com/3/img/cf/Italy.png', 'http://5kfollowersboost.com/3/img/cf/Singapore.png'];	
 	var followers_amount =["<span class='r-a-amount'><img class='img-responsive' src='img/f-s-img-3.png'/>5000 Followers</span>",
 						   "<span class='r-a-amount'><img class='img-responsive' src='img/f-s-img-2.png'/>2500 Followers</span>",
 						   "<span class='r-a-amount'><img class='img-responsive' src='img/f-s-img-1.png'/>1000 Followers</span>"];	
