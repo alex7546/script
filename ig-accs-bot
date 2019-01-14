@@ -1,0 +1,443 @@
+#RequireAdmin
+AutoItSetOption("mousecoordMode",0)
+Global $namecode[13]
+Global $name
+Global $usernamecode[12]
+Global $username
+Global $country[59]
+Global $countrycode
+Global $comment[6]
+Global $commentcode
+
+
+
+
+$country[0]="Albania"
+$country[1]="Argentina"
+$country[2]="Australia"
+$country[3]="Austria"
+$country[4]="azerbaijan"
+$country[5]="belgium"
+$country[6]="bosnia and herzegovina"
+$country[7]="brazil"
+$country[8]="bulgaria"
+$country[9]="canada"
+$country[10]="chile"
+$country[11]="costa rica"
+$country[12]="croatia"
+$country[13]="cyprus"
+$country[14]="czech republic"
+$country[15]="denmark"
+$country[16]="estonia"
+$country[17]="finland"
+$country[18]="france"
+$country[19]="georgia"
+$country[20]="germany"
+$country[21]="greece"
+$country[22]="hong kong"
+$country[23]="hungary"
+$country[24]="iceland"
+$country[25]="india"
+$country[26]="indonesia"
+$country[27]="ireland"
+$country[28]="ireland"
+$country[29]="italy"
+$country[30]="japan"
+$country[31]="latvia"
+$country[32]="luxembourg"
+$country[33]="macedonia"
+$country[34]="malaysia"
+$country[35]="mexico"
+$country[36]="moldova"
+$country[37]="netherlands"
+$country[38]="new zealand"
+$country[39]="norway"
+$country[40]="portugal"
+$country[41]="romania"
+$country[42]="russia"
+$country[43]="serbia"
+$country[44]="singapore"
+$country[45]="slovakia"
+$country[46]="slovenia"
+$country[47]="south africa"
+$country[48]="south korea"
+$country[49]="spain"
+$country[50]="sweden"
+$country[51]="switzerland"
+$country[52]="taiwan"
+$country[53]="thailand"
+$country[54]="turkey"
+$country[55]="ukraine"
+$country[56]="united kingdom"
+$country[57]="united states"
+$country[58]="vietnam"
+
+
+
+
+
+
+$comment[0]="hhhhh i like ur profil bro it's amazing keep going !!"
+$comment[1]="omg what a fantastic pics you post here on insta"
+$comment[2]="i like you so much and i love to meet you one day"
+$comment[3]="guys just follow me and i'll follow you back !! "
+$comment[4]="hey everyone i want to have more friends here on insta so follow me and i'll follow you back"
+$comment[5]="i'm from usa where are u from ?? follow me and i'll follow you back !! please "
+
+
+while 1<2
+run_vpn()
+connect_vpn()
+close_vpn()
+open_opera()
+start_ig()
+generate_username()
+sleep(1000)
+ClipPut($username)
+sleep(500)
+Send("^v")
+sleep(500)
+Send("@mail.uk")
+username()
+close_opera()
+run_vpn()
+disconnect_vpn()
+WEnd
+
+
+func follow()
+   winactivate("Instagram - Opera")
+
+   send("{TAB}")
+   sleep(100)
+   send("{TAB}")
+   sleep(500)
+   send("{ENTER}")
+   sleep(5000)
+   send("{DOWN}")
+   sleep(100)
+   send("{DOWN}")
+   sleep(100)
+   send("{DOWN}")
+   sleep(100)
+   send("{DOWN}")
+   sleep(100)
+   send("{DOWN}")
+   sleep(100)
+   send("{DOWN}")
+   sleep(100)
+   send("{DOWN}")
+   sleep(100)
+   send("{DOWN}")
+   sleep(100)
+   send("{DOWN}")
+   sleep(100)
+   send("{DOWN}")
+   sleep(500)
+   mouseclick("primary",227,219,1,0)
+   sleep(6000)
+   mouseclick("primary",176,282,1,0)
+   sleep(7000)
+   mouseclick("primary",554,181,1,0)
+   sleep(2000)
+   send("{DOWN}")
+   sleep(100)
+   send("{DOWN}")
+   sleep(100)
+   send("{DOWN}")
+   sleep(100)
+   send("{DOWN}")
+   sleep(100)
+   send("{DOWN}")
+   sleep(100)
+   send("{DOWN}")
+   sleep(100)
+   send("{DOWN}")
+   sleep(100)
+   send("{DOWN}")
+   sleep(100)
+   send("{DOWN}")
+   sleep(100)
+   send("{DOWN}")
+   sleep(100)
+   send("{DOWN}")
+   sleep(100)
+   mouseclick("primary",166,316,1,0)
+   sleep(10000)
+   mouseclick("primary",257,327,1,0)
+   mouseclick("primary",257,327,1,0)
+   sleep(1000)
+   mouseclick("primary",451,524,1,0)
+   sleep(1000)
+   comment()
+   sleep(500)
+   ClipPut($commentcode)
+   sleep(500)
+   send("^v")
+   sleep(500)
+   send("{ENTER}")
+   sleep(10000)
+
+   EndFunc
+
+
+func comment()
+  $commentcode=$comment[random(0,5)]
+
+   EndFunc
+
+Func random_coutry()
+$countrycode=$country[random(0,58)]
+EndFunc
+Func close_opera()
+WinActivate("Instagram - Opera")
+sleep(10000)
+MouseClick("primary",783,17,1,0)
+sleep(2000)
+EndFunc
+func generate_username()
+   $usernamecode[0]=chr(Random(97,122))
+$usernamecode[1]=chr(Random(97,122))
+$usernamecode[2]=chr(Random(97,122))
+$usernamecode[3]=chr(Random(97,122))
+$usernamecode[4]=chr(Random(97,122))
+$usernamecode[5]=chr(Random(97,122))
+$usernamecode[6]=chr(Random(97,122))
+$usernamecode[7]=chr(Random(97,122))
+$usernamecode[8]=chr(Random(97,122))
+$usernamecode[9]=chr(Random(97,122))
+$usernamecode[10]=chr(Random(97,122))
+$usernamecode[11]=chr(Random(97,122))
+$username=""
+for $i = 0 to 11
+$username=$usernamecode[$i] & $username
+Next
+
+EndFunc
+func generate_name()
+   $namecode[12]=chr(Random(65,90))
+$namecode[11]=chr(Random(97,105))
+$namecode[10]=chr(Random(97,105))
+$namecode[9]=chr(Random(97,122))
+$namecode[8]=chr(Random(97,105))
+$namecode[7]=" "
+$namecode[6]=chr(Random(65,90))
+$namecode[5]=chr(Random(97,105))
+$namecode[4]=chr(Random(97,105))
+$namecode[3]=chr(Random(97,122))
+$namecode[2]=chr(Random(97,122))
+$namecode[1]=chr(Random(97,122))
+$namecode[0]=chr(Random(97,105))
+$name=""
+for $i = 0 to 12
+$name=$namecode[$i] & $name
+Next
+EndFunc
+Func username()
+
+sleep(100)
+Send("{TAB}")
+sleep(500)
+generate_name()
+sleep(1000)
+ClipPut($name)
+sleep(500)
+Send("^v")
+sleep(500)
+Send("{TAB}")
+sleep(100)
+generate_username()
+sleep(500)
+ClipPut($username)
+sleep(500)
+send("^v")
+sleep(500)
+WinActivate("accounts.txt - Notepad")
+sleep(5000)
+send("^v")
+sleep(500)
+WinActivate("Instagram - Opera")
+sleep(5000)
+send("{TAB}")
+sleep(500)
+send("{TAB}")
+sleep(500)
+generate_username()
+sleep(500)
+ClipPut($username)
+sleep(500)
+send("^v")
+sleep(500)
+WinActivate("accounts.txt - Notepad")
+sleep(5000)
+send(":")
+sleep(500)
+send("^v")
+sleep(500)
+send("{ENTER}")
+sleep(1000)
+send("^s")
+sleep(500)
+WinActivate("Instagram - Opera")
+sleep(5000)
+send("{TAB}")
+sleep(500)
+send("{TAB}")
+sleep(500)
+send("{ENTER}")
+sleep(5000)
+   MouseClick("primary",192,272,1,0)
+   sleep(2000)
+   MouseClick("primary",389,492,1,0)
+   sleep(5000)
+   sleep(100)
+   mouseclick("primary",421,556,1,0)
+   sleep(500)
+   mouseclick("primary",421,556,1,0)
+   sleep(500)
+   mouseclick("primary",421,556,1,0)
+  sleep(100)
+   mouseclick("primary",421,556,1,0)
+   sleep(500)
+   mouseclick("primary",421,556,1,0)
+   sleep(500)
+   mouseclick("primary",421,556,1,0)
+
+
+
+EndFunc
+func copy_emailandpass()
+WinActivate("accounts.txt - Notepad")
+sleep(1000)
+MouseClick("primary",44,61,1,0)
+MouseClick("primary",44,61,1,0)
+Sleep(500)
+send("^x")
+sleep(500)
+send("^s")
+Sleep(500)
+WinActivate("Instagram - Opera")
+Sleep(500)
+send("^v")
+Sleep(500)
+send("{TAB}")
+Sleep(500)
+send("{TAB}")
+Sleep(500)
+send("{TAB}")
+Sleep(500)
+send("{TAB}")
+Sleep(500)
+WinActivate("copiedaccounts.txt - Notepad")
+sleep(1000)
+Send("{ENTER}")
+sleep(500)
+Send("*************************")
+sleep(500)
+Send("{ENTER}")
+sleep(500)
+Send("email : ")
+sleep(500)
+Send("^v")
+sleep(500)
+Send("{ENTER}")
+sleep(500)
+WinActivate("accounts.txt - Notepad")
+sleep(500)
+Send("{LEFT}")
+sleep(500)
+Send("{DELETE}")
+sleep(500)
+
+MouseClick("primary",44,61,1,0)
+MouseClick("primary",44,61,1,0)
+Sleep(500)
+send("^x")
+Sleep(500)
+Send("{LEFT}")
+sleep(500)
+Send("{DELETE}")
+sleep(500)
+send("^s")
+Sleep(500)
+WinActivate("Instagram - Opera")
+Sleep(500)
+send("^v")
+Sleep(500)
+WinActivate("copiedaccounts.txt - Notepad")
+sleep(1000)
+send("Email Password : ")
+Sleep(500)
+send("^v")
+Sleep(500)
+Send("{ENTER}")
+Sleep(500)
+send("^s")
+Sleep(500)
+Sleep(500)
+send("Instagram Password : ")
+Sleep(500)
+send("^v")
+Sleep(500)
+Send("{ENTER}")
+Sleep(500)
+send("^s")
+EndFunc
+
+func run_vpn()
+sleep(2000)
+run("C:\Program Files (x86)\NordVPN\NordVPN.exe")
+sleep(8000)
+EndFunc
+
+func connect_vpn()
+sleep(2000)
+run("C:\Program Files (x86)\NordVPN\NordVPN.exe")
+WinActivate("NordVPN")
+sleep(15000)
+MouseClick("primary",756,68,1,0)
+sleep(1000)
+random_coutry()
+sleep(500)
+ClipPut($countrycode)
+sleep(500)
+send("^v")
+sleep(8000)
+MouseClick("primary",694,123,1,0)
+sleep(40000)
+
+EndFunc
+
+func disconnect_vpn()
+sleep(2000)
+run("C:\Program Files (x86)\NordVPN\NordVPN.exe")
+WinActivate("NordVPN")
+sleep(8000)
+MouseClick("primary",429,72,1,0)
+EndFunc
+
+func close_vpn()
+sleep(2000)
+MouseClick("primary",773,20,1,0)
+EndFunc
+
+func open_opera()
+sleep(2000)
+run("C:\Users\instagram\AppData\Local\Programs\Opera\launcher.exe")
+sleep(5000)
+EndFunc
+
+func start_ig()
+WinWait("Instagram - Opera")
+WinActivate("Instagram - Opera")
+sleep(8000)
+MouseClick("primary",767,102,1,0)
+sleep(5000)
+send("{TAB}")
+sleep(1000)
+send("{TAB}")
+sleep(500)
+
+
+
+EndFunc
